@@ -11,6 +11,26 @@
     display: none;
 }
 
+/* MENU */
+.menu__container {
+    position: fixed;
+    bottom: 0%;
+    height: 74px;
+    width: 100%;
+}
+
+.menu__lista {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4) { /*como a classe menu__lista possui mais de uma lista, pra que somente os icones aparecessem utilizamos a função de chamar o elemento filho e aplicar o display none, assim evitamos criar mais classes e bagunçar o código*/
+    display: none;
+}
+
 /* RODAPÉ */
 .rodape__container {
     display: flex;
@@ -27,7 +47,6 @@
     overflow: scroll;
     gap: 15px /*propriedade que aplica espaçamento entre os itens*/
 }
-
 
 @media (min-width: 834px) {
     /* CABEÇALHO */
